@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Estilizando tabelas</h2>
+    <form action="">
+        <fieldset>
+            
+            <legend>Detalhes do contato</legend>
+            <div>
+                 <label for="name">Nome</label>
+                <!--podemos envolver o input com a tag label ou usar no parametro "for" o mesmo dado   inserido no id-->
+                <input type="text" name="name" id="name"> 
+            </div>
+            <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"> 
+             </div>
+             <div>
+            <label for="url">URL</label>
+            <input type="text" name="url" id="url"> 
+            </div>
+        </fieldset>
+        <fieldset> 
+            <legend>Comentario</legend>
+             <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea  type="text" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset> 
+            <legend>Lembrar de mim</legend>
+             <div>
+                <label>
+                    <input type="radio" name="lembrar" id="sim">sim
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="lembrar" id="nao">nao
+                </label>
+            </div>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

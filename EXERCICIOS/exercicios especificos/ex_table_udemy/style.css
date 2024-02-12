@@ -1,0 +1,22 @@
+@charset "pt-br";
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+fieldset{
+    padding: 1em;
+    margin: 1em 0;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+}
+input[type="text"]{/*selecionamos atributos no css pondo entre colchetes*/
+    width: 200px;
+
+}

@@ -1,0 +1,10 @@
+@charset "pt-BR";
+
+@media (screen <= 680px) {
+    header {
+        background-image: url(imagens/bg-3.jpg);
+        position: relative;
+        right: 50px;
+    }
+    
+}

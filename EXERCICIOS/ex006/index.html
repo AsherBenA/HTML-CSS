@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens-flexiveis</title>
+</head>
+<body>
+    <h1>Teste de imagem</h1>
+    <p>Esse éum teste de imagem dinamica, onde vamos abrir o mesmo arquivo em diferentes tamanhos de tela</p>
+
+    <picture>
+            <source media="(max-width: 770px )" srcset="img/foto-p.png" type="image/png">
+            <source media="(max-width: 1070px )" srcset="img/foto-m.png" type="image/png">
+            <img src="img/foto-g.png" alt="Imagem flexivel">
+
+    </picture>
+    <h1>Audio</h1>
+    <p>Agora vamos reproduzir audios.</p>
+    <audio src="media/TORSION_Density_&_Time.mp3" autoplay controls></audio>
+    <!--Por todos os formatos de audio, MP3(Mpeg), wav, OGG
+    Podemos também por um source src - type entre as tags audio-->
+    <h1>esse audio esta em source</h1>
+    <audio  preload="auto" autoplay controls loop>
+        <source src="media/TORSION_Density_&_Time.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não tem suporte baixe o que <a href="media/TORSION_Density_&_Time.mp3">aqui</a></p>
+     
+    </audio>
+    <p>Infelizmente o seu navegador não tem suporte baixe o que <a href="media/TORSION_Density_&_Time.mp3" download="TORSION_Density_&_Time.mp3">aqui</a></p>
+
+    <h1>Videos locais</h1>
+    <p>videos hospedados no meu próprio servidor</p>
+    <video src="media/mountains_-_81945 (720p).mp4" width="400" height="400" controls loop poster="capa video/limoes-capa.png"></video>
+    <!--Podemos fazer com video assim como audio usando a tag source entra a tag video alterando o o parametro do atributo type dentro de source para video/-->
+    <h1>Agora vamos inserir videos que não estão nomeu servidor</h1>
+    <iframe width="400" height="400" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=ue0zmBbmTObe08Ja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

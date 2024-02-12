@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container{
+            background: gray;
+            height: 500px;
+            padding: 10px;
+            display: flex;
+            /*column / column-reverse / row /row-reverse*/
+            flex-direction: row;
+        
+            /*warp/nowarp/warp-reverse*/
+            flex-wrap: wrap;
+
+             /**/
+             justify-content: space-between;
+        }
+
+        .item{
+            background-color: white;
+            margin: 10px;
+            margin-top: 15px;
+            width: 100px;
+            height: 100px;
+        }
+        .item1{
+            /*flex-grow: 1;*/
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+        .item2{
+            /*flex-grow: 2;*/
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="container">
+        <div class="item item1" type="item">01</div>
+        <div class="item item2" type="item">02</div>
+        <div class="item" type="item">03</div>
+        <div class="item" type="item">04</div>
+        <div class="item" type="item">04</div>
+        <div class="item" type="item">04</div>
+    </div>  
+</body>
+</html>
