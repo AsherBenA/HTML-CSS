@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    max-width: 50%;
+    margin: auto;
+    height: 400px;
+   overflow: auto;
+}
+.pessoa{
+    display: flex;
+    margin-top: 50px;
+    background-color: rgba(128, 128, 128, 0.61);
+    border-radius: 50px;
+    justify-content: space-between;
+    
+}
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+img{
+    border-radius: 50%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.nome, .email{
+    width: 200px;
+    display: inline-block;
+    font-size: 20px;
+}
+.email{
+    color: rgba(255, 255, 255, 0.623);
+}
+
+ .edit, .del{
+
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    right: 20px;   
+}
+.icons{
+    width:20px ;
+    height: 20px;
+    border-radius: 0%;
+
+}
+
+.del, .edit{
+    
+    display: inline-block;
+    margin: 0px;
+}
+
+.del:hover, .edit:hover{
+    background-color: rgba(158, 147, 147, 0.527);
+    border-radius: 50%;
+}
+
+.pessoa{
+    margin: 10px;
+}
+
+
+
